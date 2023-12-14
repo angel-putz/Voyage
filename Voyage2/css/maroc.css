@@ -1,0 +1,221 @@
+/* Common styles for all screen sizes */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: bebas neue;
+}
+
+.menu {
+    float: right;
+    height: 60px;
+    list-style: none;
+    padding: 10px;
+    margin: 40px;
+}
+
+.menu li {
+    float: left;
+    width: 200px;
+}
+
+.menu li a:link,
+.menu li a:visited {
+    display: block;
+    color: #fff;
+    background: #8b7dd8;
+    padding: 6px 10px;
+    border-right: 1px solid #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #927fe9;
+}
+
+.menu li a:active {
+    background-color: #b08989;
+}
+
+.menu .sousmenu {
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.menu .sousmenu li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.menu .sousmenu li a:link,
+.menu li a:visited {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #f59696;
+}
+
+.menu .sousmenu li a:hover {
+    background-color: #199bd2;
+}
+
+.menu li:hover .sousmenu {
+    display: block;
+}
+
+.marge {
+    margin-top: 50px;
+    background-image: url(../desert2.jpg);
+}
+
+.titre {
+    margin-top: 50px;
+    text-align: center;
+    color: brown;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Added flex-wrap property */
+    justify-content: center;
+}
+
+.card {
+    flex: 0 0 350px; /* Added flex property */
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.imgmaroc {
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.intro {
+    height: 200px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 240px;
+    background: rgba(27, 27, 27, 0.5);
+    color: white;
+    transition: 0.5s;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .intro {
+    height: 220px;
+    bottom: 240px;
+    background: black;
+}
+
+.card:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+    .menu {
+        margin: 10px;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .container {
+        margin: 10px;
+    }
+
+    .card {
+        flex: 0 0 100%;
+        margin: 10px;
+    }
+    .titre{
+        padding-right: 46px;
+        padding-top: 25px;
+    }
+}
+
+
+
+/* Footer CSS */
+footer {
+    background-color: rgba(211, 176, 228, 0.786);
+    color: white;
+    flex-shrink: 0;
+}
+
+footer img {
+    width: 10%;
+}
+
+.contenu-footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+}
+
+.bloc {
+    width: 25%;
+    margin: 0 30px;
+}
+
+.footer-reseau,
+.footer-travel3,
+.footer-blog {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+
+
+
+

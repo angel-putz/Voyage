@@ -1,0 +1,138 @@
+.fond{
+    background-image: url(../image-france.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+}
+.titre{
+    color: white;
+    text-align: center;
+}
+.drapeau{
+    background-image: url(../drapeau-france.png);
+}
+.texte-gauche{             /*permet de faire un texte au milieu avec un find noir ecrit en blanc*/
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    opacity: 0.7;
+    
+}
+
+.colonnes-france1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 210px;
+    font-size: large;
+}
+
+.image-droite{
+    height: 500px;
+    width: 800px;
+    margin-top: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.logoretour{
+    display: flex;
+    position: fixed;
+    border-radius: 10px 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    z-index: 1;
+    width: 2.5vw;
+    top: 0em;
+}
+
+.paragraphe1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.souligner{
+    text-decoration: underline;
+}
+
+
+.animation{                                          /*cette animation permet de slide le texte*/
+    animation: 2s linear 0.1s 1 running slidein;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      transform: translate(12px, 50%);
+    }
+  
+    to {
+      transform: rotate(360deg)
+    }
+  }
+
+.fond-ecran{
+    background-image: url(../fond-ecran-france.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+@media  screen and (max-width:768px) {
+    .fond{
+        height: 250px; 
+        width: 307px;
+    }
+    .degrader{
+        padding-left: 145px;
+        padding-top: 119px;
+    }
+    .texte-gauche{
+        padding-left: 5px;
+        margin-left: 0px;
+        padding-right: 0px;
+        width: 300px;
+    }
+    .animation{
+        padding-top:106px ;
+        padding-left: 293px;
+    }
+    .paragraphe1{
+        width: 100px;
+    }
+    .image-droite{
+        display: 0;
+        width: 200px;
+
+    }
+    img {
+        width: 200px;
+    }
+    footer img{
+        width: 20px;
+    }
+    .contenu-footer{
+        flex-direction: column;
+    }
+    .logoretour {
+        width: 20px;
+    }
+    .colonnes-france1{
+        padding-top: 20px;
+    }
+}
+

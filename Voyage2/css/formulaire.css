@@ -1,0 +1,93 @@
+.forme{
+    min-height: 90vh;
+    background-image: url(../fondecranformulaire.jpg);
+    background-size: cover;
+    background-position: bottom;
+   
+}
+.forme h3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #571c30;
+    text-align: center;
+}
+
+.contaiiner{
+   
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0,0,0,0.5);
+    padding: 28px;
+    margin: 0 auto;  /*margin 0 auto place le bloque au millieu*/ 
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input{
+
+height: 40px;
+width: 95%;
+border-radius: 7px;
+outline: none;
+border: 1px solid grey;
+padding: 0 10px;
+}
+
+.gender-title{
+    color: white;
+    font-size: 24px;
+    font-weight: 200;
+    border-bottom: 4px;
+}
+
+@media screen and (max-width: 728px){
+    .user-input-box{
+        width: 100%;
+        padding-right: 0%;
+    }
+    .contaiiner{
+        max-width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .user-input-box input{
+        padding-right: 0%;
+    }
+    
+}
